@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --main-color: #E479E7;
+    --secondary-color: #59D6F8;
+    --accent-color: #94AFF1;
+}
+
+
+body {
+    margin: 0;
+    background: linear-gradient(var(--main-color), var(--accent-color), var(--secondary-color));
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    &.container {
+        display: flex;
+        max-width: 1280px;
+        padding: 1em 2em;
+        margin: auto;
+    }
+
+    #circle {
+        height: 50vh;
+        width: 50vh;
+        border-radius: 50%;
+        background: linear-gradient(var(--main-color), var(--accent-color), var(--secondary-color));
+        margin: auto;
+    }
+}
+

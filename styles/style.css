@@ -1,0 +1,47 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: #E479E7;
+  --secondary-color: #59D6F8;
+  --accent-color: #94AFF1;
+}
+
+body {
+  margin: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--main-color)), color-stop(var(--accent-color)), to(var(--secondary-color)));
+  background: linear-gradient(var(--main-color), var(--accent-color), var(--secondary-color));
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+main.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1280px;
+  padding: 1em 2em;
+  margin: auto;
+}
+
+main #circle {
+  height: 50vh;
+  width: 50vh;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--main-color)), color-stop(var(--accent-color)), to(var(--secondary-color)));
+  background: linear-gradient(var(--main-color), var(--accent-color), var(--secondary-color));
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */
